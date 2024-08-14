@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data from Firebase</title>
+    <style>
+        /* Your existing styles */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ff6ec4 3px solid;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6ec4;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: linear-gradient(90deg, #7873f5, #ff6ec4);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff6ec4;
+            text-align: center;
+            animation: rainbow-text 2s infinite;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        @keyframes rainbow-text {
+            0% { color: #ff6ec4; }
+            20% { color: #7873f5; }
+            40% { color: #ff6ec4; }
+            60% { color: #7873f5; }
+            80% { color: #ff6ec4; }
+            100% { color: #7873f5; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        });
+    </script>
+    <script type="module" src="displayData.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Display Data from Firebase</h1>
+    <div class="data-container" id="dataContainer"></div>
+</div>
+
+</body>
+</html>

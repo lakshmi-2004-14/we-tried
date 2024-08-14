@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer Platform - Financial Support</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ff6ec4 3px solid;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6ec4;
+        }
+        main {
+            padding: 20px 0;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: linear-gradient(90deg, #7873f5, #ff6ec4);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff6ec4;
+            text-align: center;
+        }
+        p {
+            text-align: left;
+            font-size: 1.2em;
+        }
+        .sub-section {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        form input, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+        form button {
+            background-color: #ff6ec4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #7873f5;
+        }
+        #google_element {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .chatbot-button img {
+            width: 50px;
+            height: 50px;
+        }
+.chatbot-text {
+    color: #000; /* Text color set to black */
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EmpowerHer Financial Support</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="rewards.html">Rewards & Awards</a></li>
+                    
+                    <li><a href="jobs.html">Jobs for Her</a></li>
+                    <li><a href="safety.html">Safety, Rights & Defense</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="fin.html">Financial Support</a></li>
+                </ul>
+            </nav>
+            <div id="google_element"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="financial-support">
+            <div class="container">
+                <h2>Financial Support Overview</h2>
+                <p>Empowering women with financial resources and tools to succeed in entrepreneurship.</p>
+
+                <div class="sub-section">
+                    <h2>Microfinance Management</h2>
+                    <img src="data:image/png;base64,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" alt="Microfinance Management" style="margin-left: 300px;">
+                    <p>Microfinance management plays a crucial role in providing small loans to women entrepreneurs who do not have access to traditional banking services. Our platform ensures transparency and ease of access to microfinance resources, empowering women to achieve financial independence.</p>
+                </div>
+
+                <div class="sub-section">
+                    <h2>Blockchain Technology</h2>
+                    <img src="data:image/jpeg;base64,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" alt="Blockchain Technology"  style="width: 300px; height: auto; margin-left: 450px;">
+                    <p>Blockchain technology offers a secure, transparent, and tamper-proof method of managing financial transactions. At EmpowerHer, we leverage blockchain to ensure the security and integrity of all financial transactions, from microloans to large investments.</p>
+                </div>
+
+                <div class="sub-section">
+                    <h2>Cryptocurrency Transaction Management</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJq6eBFtbZ0bORhU_KJ1fXSf45C18i_b30A&s" alt="Cryptocurrency Transaction Management" style="margin-left: 300px;">
+
+                    <p>Cryptocurrency transactions provide a fast, secure, and low-cost alternative to traditional financial services. Our platform integrates cryptocurrency management to offer flexible financial solutions to our users, facilitating global financial interactions without the need for intermediaries.</p>
+                </div>
+            </div>
+        </section>
+        <section id="microfinance">
+            <h2>Microfinance Management</h2>
+           
+            <form id="loanRequestForm">
+                <input type="number" id="loanAmount" placeholder="Loan Amount" required>
+                <input type="number" id="loanDuration" placeholder="Loan Duration (days)" required>
+                <button type="submit">Request Loan</button>
+            </form>
+            <form id="loanRepayForm">
+                <button type="submit">Repay Loan</button>
+            </form>
+        </section>
+        
+        <section id="cryptoTransactions">
+            <h2>Cryptocurrency Transactions</h2>
+            
+            <form id="cryptoTransferForm">
+                <input type="text" id="recipientAddress" placeholder="Recipient Address" required>
+                <input type="number" id="transferAmount" placeholder="Amount (wei)" required>
+                <button type="submit">Transfer</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+           <p><center> &copy; 2024 EmpowerHer. All rights reserved.</center></p>
+        </div>
+    </footer>
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'af,sq,am,ar,hy,az,eu,be,bn,bg,ca,ceb,zh-CN,zh-TW,co,hr,cs,da,nl,eo,et,fil,fi,fr,gl,ka,de,el,gu,ht,ha,haw,he,hi,hmn,hu,is,ig,id,ga,it,ja,jw,kn,kk,km,rw,ko,ku,ky,lo,la,lv,lt,lb,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ny,or,ps,fa,pl,pt,pa,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tg,ta,tt,te,th,tr,tk,uk,ur,ug,uz,vi,cy,xh,yi,yo,zu',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_element');
+        }
+    </script>
+    <script src="app.js"></script>
+    <button class="chatbot-button" onclick="window.open('https://asisstant.zapier.app/', '_blank')">
+        <img src="https://img.freepik.com/premium-photo/telegram-futuristic-ai-robot-black-background_738723-109.jpg" alt="Chatbot">
+        <div class="chatbot-text">Ask any help to our assistant</div>
+    </button>
+</body>
+</html>

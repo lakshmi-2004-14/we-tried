@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer Platform - Home</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ff6ec4 3px solid;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6ec4;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: linear-gradient(90deg, #7873f5, #ff6ec4);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff6ec4;
+            text-align: center;
+            animation: rainbow-text 2s infinite;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        @keyframes rainbow-text {
+            0% { color: #ff6ec4; }
+            20% { color: #7873f5; }
+            40% { color: #ff6ec4; }
+            60% { color: #7873f5; }
+            80% { color: #ff6ec4; }
+            100% { color: #7873f5; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #google_element {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .chatbot-button img {
+            width: 50px;
+            height: 50px;
+        }
+.chatbot-text {
+    color: #000; /* Text color set to black */
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EmpowerHer</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="rewards.html">Rewards & Awards</a></li>
+                    <li><a href="financial.html">Financial Support</a></li>
+				    <li><a href="jobs.html">Jobs for Her</a></li>
+					<li><a href="safety.html">Safety, Rights & Defense</a></li>
+					<li><a href="service.html">Services</a></li>
+                    <li><a href="fin.html">Financial Support</a></li>
+                    <li><a href="display.html">display</a></li>
+                </ul>
+            </nav>
+            <div id="google_element"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to EmpowerHer</h2>
+                <p>Empowering women entrepreneurs through access to credit, financial literacy resources, and mentorship.</p>
+                
+                <div class="gallery">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.91oxE9G3wcmfcM7YyOYAUgHaDt&pid=Api&P=0&h=180" alt="Woman Entrepreneur 1">
+                    <img src="https://i.pinimg.com/originals/b3/54/fb/b354fb8fddf5aca3da6d27f5b9b9c1ca.jpg" alt="Woman Entrepreneur 2">
+                    <img src="http://2.bp.blogspot.com/-jGA5VANmGAc/UX7a63tC_dI/AAAAAAAAARo/IPo1PLGNBqs/s1600/untitled.bmp" alt="Woman Entrepreneur 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EmpowerHer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'af,sq,am,ar,hy,az,eu,be,bn,bg,ca,ceb,zh-CN,zh-TW,co,hr,cs,da,nl,eo,et,fil,fi,fr,gl,ka,de,el,gu,ht,ha,haw,he,hi,hmn,hu,is,ig,id,ga,it,ja,jw,kn,kk,km,rw,ko,ku,ky,lo,la,lv,lt,lb,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ny,or,ps,fa,pl,pt,pa,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tg,ta,tt,te,th,tr,tk,uk,ur,ug,uz,vi,cy,xh,yi,yo,zu',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_element');
+        }
+    </script>
+        <button class="chatbot-button" onclick="window.open('https://asisstant.zapier.app/', '_blank')">
+            <img src="https://img.freepik.com/premium-photo/telegram-futuristic-ai-robot-black-background_738723-109.jpg" alt="Chatbot">
+            <div class="chatbot-text">Ask any help to our assistant</div>
+        </button>
+</body>
+</html>

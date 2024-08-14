@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer Platform - Services</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6ec4, #7873f5);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ff6ec4 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6ec4;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: linear-gradient(90deg, #7873f5, #ff6ec4);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff6ec4;
+            text-align: center;
+            animation: rainbow-text 2s infinite;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        @keyframes rainbow-text {
+            0% { color: #ff6ec4; }
+            20% { color: #7873f5; }
+            40% { color: #ff6ec4; }
+            60% { color: #7873f5; }
+            80% { color: #ff6ec4; }
+            100% { color: #7873f5; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .article {
+            margin: 20px 0;
+        }
+        .article h3 {
+            color: #7873f5;
+            text-align: center;
+        }
+        .article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .article p {
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        #google_element {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .chatbot-button img {
+            width: 50px;
+            height: 50px;
+        }
+.chatbot-text {
+    color: #000; /* Text color set to black */
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="google_element"></div>
+    <header>
+        <div class="container">
+            <h1>EmpowerHer</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="rewards.html">Rewards & Awards</a></li>
+                
+                    <li><a href="jobs.html">Jobs for Her</a></li>
+                    <li><a href="safety.html">Safety,Rights & Defense</a></li>
+                    <li><a href="fin.html">Financial Support</a></li>
+
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="article">
+                    <h3>Hair Donation</h3>
+                    <img src="data:image/jpeg;base64,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" alt="Hair Donation"style="width: 300px; height: auto; margin-left: 450px;">
+>
+                    <p>We organize hair donation drives to help cancer patients receive wigs made from natural hair. Our initiative aims to boost the confidence and morale of those undergoing cancer treatment.</p>
+                </div>
+                <div class="article">
+                    <h3>Blood Donation Camps</h3>
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.z6lutkbBZSFIcNU0SziRpgAAAA?w=159&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Blood Donation"style="width: 300px; height: auto; margin-left: 450px;">
+                    
+                    <p>Our regular blood donation camps have saved countless lives. We partner with hospitals and health organizations to ensure safe and efficient blood donation processes.</p>
+                </div>
+                <div class="article">
+                    <h3>Scribe Services</h3>
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.DzIGXjz5EkdJ7JEIAG9w0AHaEK?w=327&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Scribe Service" style="width: 300px; height: auto; margin-left: 450px;">
+                    <p>We provide scribe services for students with disabilities, ensuring they can excel in their academic pursuits without any barriers. Our volunteers are trained and dedicated to offering the best support.</p>
+                </div>
+                <!-- Add more articles as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EmpowerHer. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'af,sq,am,ar,hy,az,eu,be,bn,bg,ca,ceb,zh-CN,zh-TW,co,hr,cs,da,nl,eo,et,fil,fi,fr,gl,ka,de,el,gu,ht,ha,haw,he,hi,hmn,hu,is,ig,id,ga,it,ja,jw,kn,kk,km,rw,ko,ku,ky,lo,la,lv,lt,lb,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ny,or,ps,fa,pl,pt,pa,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tg,ta,tt,te,th,tr,tk,uk,ur,ug,uz,vi,cy,xh,yi,yo,zu',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_element');
+        }
+    </script>
+        <button class="chatbot-button" onclick="window.open('https://asisstant.zapier.app/', '_blank')">
+            <img src="https://img.freepik.com/premium-photo/telegram-futuristic-ai-robot-black-background_738723-109.jpg" alt="Chatbot">
+            <div class="chatbot-text">Ask any help to our assistant</div>
+        </button>
+</body>
+</html>
+
